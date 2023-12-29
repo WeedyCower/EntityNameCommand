@@ -21,7 +21,6 @@ public class EntityCommand implements CommandExecutor
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args)
     {
-        //判断是否为此插件指令
         if(!command.getName().equals("enc")) return false;
 
         //OP默认拥有权限
