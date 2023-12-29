@@ -1,0 +1,8 @@
+name: EntityNameCommand
+version: '${project.version}'
+main: com.weedycow.entityNameCommand.Main
+api-version: '1.18'
+author: weedycow
+commands:
+  enc:
+    description: "description"

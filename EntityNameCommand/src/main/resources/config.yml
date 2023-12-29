@@ -1,0 +1,32 @@
+#允许使用的世界
+allowed_worlds:
+  - world
+  - another_world
+
+#关键词
+entity_keywords:
+  - keyword1
+  - keyword2
+
+#替换符，指令中存在此字符会被替换成关键词
+sub_keyword: kyd
+
+#替换符，指令中存在此字符会被替换成玩家名
+sub_playername: pln
+
+commands:
+  #对应上面的关键词
+  keyword1:
+    #要执行的命令，不要加斜杠
+    command:
+    - gamemode creative
+    - menu open
+    #true为后台执行，false为玩家执行
+    execute_as_console: false
+
+  keyword2:
+    command:
+    #实际输出结果就是This is keyword2!
+    - say This is kyd!
+    - tp pln 0 0 0
+    execute_as_console: true
